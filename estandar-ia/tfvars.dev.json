@@ -1,0 +1,10 @@
+{
+    "name_bucket": "bucket-test-2",
+    "acl": "private",
+    "aws_region": "us-west-1",
+    "aws_id": "id_owner",
+    "profile": "profile_aws_config",
+    "environment": "DEV",
+    "name": "My Bucket",
+    "versioning": true
+}
