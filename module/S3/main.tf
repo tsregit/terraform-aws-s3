@@ -1,9 +1,10 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = var.name-bucket
+  bucket = var.name_bucket
   acl    = var.acl
   force_destroy = true
   tags = {
-    Name        = "My bucket"
+    Name        = var.name
     Environment = var.environment
+    Terraform   = true
   }
 }
