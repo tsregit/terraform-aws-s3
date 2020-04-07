@@ -6,5 +6,21 @@
     "profile": "profile_aws_config",
     "environment": "DEV",
     "name": "My Bucket",
-    "versioning": true
+    "versioning": true,
+    "id": "log",
+    "enabled": true,
+    "expiration_days": 120,
+    "tags": {
+        "autoclean": true
+    },
+    "transitions": [
+         {
+            "days"          : 30,
+            "storage_class" : "STANDARD_IA"
+          },
+          {
+            "days"          : 60,
+            "storage_class" : "GLACIER"
+          }
+    ]
 }
